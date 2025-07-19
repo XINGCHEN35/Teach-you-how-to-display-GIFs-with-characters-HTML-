@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CXK</title>
+  <style>
+  .box{
+    width:100vw;
+    height:300px;
+    background: url("1.gif")no-repeat;    //括号里的文件就是自己要转换的GIF
+    background－size:100%;
+    -webkit-background-clip: text;
+    word-wrap: break-word;
+    color:transparent;
+  }
+
+    body{
+      background: #000000;
+    }
+    
+  </style>
+  
+  <body>
+    <div class="box">
+    </div>
+    
+    <script>
+
+const str = "&#%"; //引号之间就是要显示的文字
+setInterval(()=>{
+const box = document.querySelector(".box");
+let content = "";
+
+for(let i = 0; i < 900; i++) {
+  content += str.charAt(Math.random() * str.length | 0);
+}
+
+box.textContent = content;
+},100)
+</script>
+  </body>
+
+</html>
