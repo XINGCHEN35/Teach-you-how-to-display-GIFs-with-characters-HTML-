@@ -1,2 +1,2 @@
-# Teach-you-how-to-display-GIFs-with-characters-HTML-
+# 让GIF以字符显示
 来自XINGCHEN35，20250719.
